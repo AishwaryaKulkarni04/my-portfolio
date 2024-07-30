@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/font/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <!-- =================Body Started==================== -->
+  <body>
+    <!-- =================================********================================= -->
+    <div id="show_menuitems" class="my-menu">
+      <div class="menu-box">
+        <span>
+          <i onclick="hide_menu()" class="flaticon-cancel"></i>
+        </span>
+        <ul>
+          <li><a onclick="hide_menu()" href="#home">Home</a></li>
+          <li><a onclick="hide_menu()" href="#about">Specialization</a></li>
+          <li><a onclick="hide_menu()" href="#resume">Resume</a></li>
+          <li><a onclick="hide_menu()" href="#portfolio">Projects</a></li>
+          <!-- <li><a onclick="hide_menu()" href="#textimonial">Reviews</a></li> -->
+          <li><a onclick="hide_menu()" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- =================================********================================= -->
+    <section id="home">
+      <header>
+        <div class="container">
+          <div class="main-nav">
+            <div class="logo">
+              <h2>Aishwarya Kulkarni</h2>
+            </div>
+           
+            <div onclick="show_menu()" class="my-toogle">
+              <span><i class="flaticon-menu"></i></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="my-wrapper">
+            <div class="inter">
+              <h6>Introduce</h6>
+            </div>
+            <div class="welcome-box">
+              <!-- <h3 class="text">Hey <span>its Aishwarya Kulkarni</span></h3> -->
+              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading"></span>
+			            <h2 class="">Hey,its <span>Aishwarya Kulkarni</span></h2>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Engineer  ',
+						'Frontend Engineer  ',
+						// 'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Software Engineer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+							<!-- <a href="https://github.com/AishwaryaKulkarni04/github-portfolio.git" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+            </div>
+            <!-- <div class="name-box">
+                                <h1>Hello my name is  <span>Stive Smith.</span></h1>
+                            </div> 
+                            <div class="line"></div> -->
+          </div>
+          <!-- <div class="copy-right">
+                            <h6>© Smith 2020</h6>
+                        </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- =================================********================================= -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="wrapper">
+            <div class="left-wrapper">
+              <div class="content">
+                <div class="title">
+                  <h4>About me</h4>
+                  <h2>
+                    MY MISSION IS <span>DESIGN & DEVELOP</span> THE BEST
+                    WEBSITES AROUND
+                  </h2>
+                  <p>
+                    I love everything that has to do with Web design &
+                    development, Graphic design, and I feel a true devotion for
+                    typography. I have 2+ years of experience working as a UI
+                    Developer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="right-wrapper">
+              <div class="content _yt_er_ol">
+                <div class="_re_uy_iu">
+                  <div class="_ol_ew_xs">
+                    <span>UI Development</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      style="width: 70%"
+                      class="progress-bar my-bars"
+                      role="progressbar"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div class="_re_uy_iu">
+                  <div class="_ol_ew_xs">
+                    <span>Design Concepts</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      style="width: 65%"
+                      class="progress-bar my-bars"
+                      role="progressbar"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div class="_re_uy_iu">
+                  <div class="_ol_ew_xs">
+                    <span>Communication</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      style="width: 30%"
+                      class="progress-bar my-bars"
+                      role="progressbar"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inter">
+              <h6>WHAT I DO</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================********================================= -->
+    <section id="resume">
+      <div class="container">
+        <div class="row">
+            <div class="inter col-12">
+                <div class="heading">
+                    <h2>Resume</h2>
+                </div>
+                <a href="" class="showCV">Get My CV Here</a>
+            </div>
+          <div class="my-wrapper">
+           
+            <div class="left-wrapper">
+              <div class="content">
+                <div class="head">
+                  <h2>Education</h2>
+                </div>
+                <div class="list-inner">
+                  <ol>
+                    <li>
+                      <h4>Master's of Computer Application</h4>
+                      <h6>Sinhgad Institute of Management Pune</h6>
+                      <span>July 2019 to July 2022 </span>
+                      <!-- <p>Every year, the number of people using the Internet is 
+                                                increased to twice that of the previous year. Also, the increase 
+                                                in various internet-enabled devices like Mobile, Tablet, PC, 
+                                                and TV have turned over a new era in the progress 
+                                                of Web development.</p> -->
+                    </li>
+
+                    <li>
+                                                <h4>Bachelor's of Computer Science</h4>
+                                                <h6>Shivaji University Kolhapur</h6>
+                                                <span>July 2016 to July 2019</span>
+                                                
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="right-wrapper">
+              <div class="content">
+                <div class="head">
+                  <h2>Experience</h2>
+                </div>
+                <div class="list-inner">
+                  <ol>
+                    <li>
+                      <h4>Encora Inc</h4>
+                      <h6>Software Engineer</h6>
+                      <span>01-01-2022 - Present</span>
+                      <ul>
+                        <!-- <p>
+                            Website Development, Web Design, Application Development, Technical Support.
+                        </p> -->
+                        <p>
+                            As a Software engineer i have worked on 2 projects focusing mostly as a frontend developer.
+                            Implemented end to end functionalities as per the requirements.
+                            Work extensively on JavaScript,Vue js,Angular.js,React js and Angular.
+                            Provided the complete layout with the help of HTML and CSS.
+                            Used frameworks such as bootstrap,vuetify and angular material to build the UI.
+                            Analyze the given requirement and provided the optimal solutions which fit into given scenario.
+                            Troubleshoot tested and remedied issues before deployment.
+                            As a part of backend we have used node js as a server with mongo db and djnago as a part of database.
+                            Also tested and debug the issues before deployment.
+
+                        </p>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================********================================= -->
+    <section id="portfolio">
+      <!-- <h2 class="copy-center" style="color: whitesmoke;">Projects</h2> -->
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+          <div class="my-wrapper">
+            <div class="wrapper-box">
+              <div class="content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      href="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      Agile Sys Labs
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      href="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="true"
+                    >
+                      HTM
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="contact-tab"
+                      data-bs-toggle="tab"
+                      href="#contact-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="contact-tab-pane"
+                      aria-selected="true"
+                    >
+                      Air BnB
+                    </button>
+                  </li>
+                </ul>
+                <div class="card tab-content col-12" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                    tabindex="0"
+                  >
+                  <div class="card-title">
+                    Decision Making Platform
+                <!-- </div> -->
+                    <div class="card-body">Tech Stack Used :-JavaScript, VueJS, Python, NodeJS, Django, Pl-SQL, Git
+                      Lab Toolkit
+                      <br>
+                      Expertise-
+                      Web Development, Strategic Planning, Risk Management,Data Visualization, Decision Modeling
+                        <p class="card-text">
+                          Agile Intelligence is a decision intelligence platform built to facilate
+                          decisions in a complex scenarios where their is lot of uncertanity.
+                          <br>
+                          This project is a special tool designed to help make decisions in complicated 
+                          situations where the outcomes matters alot.
+                        </p>
+                       </div>
+                      </div>
+                
+                </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                    tabindex="0"
+                  >
+                  <div class="card-title">
+                    Calm Down Stories Dashboard
+                    <div class="card-body">Tech Stack Used :-TypeScript, Angular, NodeJS Mongo DB,ExpressJS, BitBucket Toolkit
+                      <br>
+                      Expertise-
+                      Web Development, Search, Dashboard
+                        <p class="card-text">
+                          Calm Down Stories Dashboard is an IOS application which we have built a desktop version.
+                          <br>
+                          It is a application built specially for working womens ,as they didnt get enough time to spend with their childrens
+                          so they can provide audio for bed time stories ,where childrens can listen as they want.
+                        </p>
+                       
+                    </div>
+                  </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="contact-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                    tabindex="0"
+                  >
+                  <div class="card-title">
+                    Clone 
+                    <div class="card-body">Tech Stack Used :-HTML, CSS, WebSockets, JavaScript, ReactJS, NodeJS, Axios.
+                      <br>
+                        Expertise-
+                        Web Development, Web Crawler, Search, Payment Gateway Integration, RESTful APIs
+                        <p class="card-text">
+                          We have build a space website as the official site has.
+                          <br>
+                          This project is used to practice UI with React, Redux, Hooks.
+                        </p>
+                        
+                    </div>
+                  </div>
+                </div>
+            </li>
+              </div>
+            </div>
+            <!-- <div class="inter">
+              <h6>Portfolio</h6>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================********================================= -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="heading">
+              <h2>Get in Touch</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="col-12">
+             <form action="">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="121"
+                      type="text"
+                      required="name"
+                      placeholder="Enter Your Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="122"
+                      type="text"
+                      required="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="123"
+                      type="text"
+                      required="subject"
+                      placeholder="Subject (optinal)"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea
+                      class=""
+                      cals="40"
+                      rows="10"
+                      name="124"
+                      type="text"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="send">
+                    <a href="#">Send</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-md-7 ftco-animate">
+                <h2>Have a<span> Question?  </span> 
+                  <br>
+                  <a href="https://forms.gle/" class="btn py-3 px-5">Click Here</a> </h2>
+              </div>
+            </div>
+            <div class="inter">
+              <h6>Contact</h6>
+            </div>
+          </div> -->
+           <div class="social-media">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/aishwarya.kulkarni04/"><i class="flaticon-facebook"></i></a>
+                </li>
+                <!-- <li>
+                   <a><i class="flaticon-twitter"></i></a>
+                </li> -->
+                <!-- <li>
+                  <a><img class="flaticon-instagram-big-logo"></a>
+                </li> -->
+                <li>
+                  <a href="https://www.linkedin.com/in/aishwaryak04/"><i class="flaticon-linkedin"></i></a>
+                </li>
+                <!-- <li>
+                  <a><i class="flaticon-dribbble"></i></a>
+                </li> -->
+
+                <a class="new" href="https://www.instagram.com/aishwarya.kulkarni04/" target="_blank">
+                    <img src="assets/images/user/instagram.png" alt="Instagram">
+                </a>
+                <a class="new" href="https://github.com/AishwaryaKulkarni04/" target="_blank">
+                  <img src="assets/images/user/github.png" alt="Github">
+                </a>
+              </ul>
+            </div>
+            <div class="col-12">
+              <!-- <form action="">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        name="121"
+                        type="text"
+                        required="name"
+                        placeholder="Enter Your Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        name="122"
+                        type="text"
+                        required="email"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        name="123"
+                        type="text"
+                        required="subject"
+                        placeholder="Subject (optinal)"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea
+                        class=""
+                        cals="40"
+                        rows="10"
+                        name="124"
+                        type="text"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="send">
+                      <a href="#">Send</a>
+                    </div>
+                  </div>
+                </div>
+              </form> -->
+              <div class="row justify-content-center">
+                <div class="col-md-7 ftco-animate text-center">
+                  <h2>Have a<span> Question?  </span> 
+                    <br>
+                    <a href="https://forms.gle/Ls5qgYXW92Zo8r2E9" class="btn py-3 px-5">Click Here</a> </h2>
+                </div>
+              </div>
+              <div class="inter">
+                <h6>Contact</h6>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================********================================= -->
+
+    <!-- =================================********================================= -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- =================Body End==================== -->
+</html>
